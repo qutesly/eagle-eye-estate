@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroDetails from "./HeroDetails";
 import HeroBtn from "./HeroBtn";
+import data from './data'
+
 
 const HeroContent = () => {
+  const [hero, setHero] = useState(data)
   return (
     <div className="hero-bg">
       <div className="hero-content">
@@ -33,7 +36,7 @@ const HeroContent = () => {
             </div>
           </div>
         </div>
-        <HeroDetails />
+        <HeroDetails hero={hero} />
         <HeroBtn text='Become an Affiliate' className='affiliate-btn blue-btn' />
       </div>
       

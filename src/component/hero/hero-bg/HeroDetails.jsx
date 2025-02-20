@@ -1,22 +1,14 @@
 import React from 'react';
-import data from './data'
+import HeroData from './HeroData';
 
-const HeroDetails = () => {
+const HeroDetails = ({hero}) => {
+
   return (
     <div className="hero-bottom">
           <h2>buy/rent</h2>
           <div className="hero-b-container">
-              {data.map((item, index)=> {
-                const {title, icon, details} = item;
-                return(
-                    <div className="hero-b-content" key={index}>
-                <div className='location'>
-                    <p>{title}</p>
-                  <img src={icon} alt=""/>
-                </div>
-                  <h3>{details}</h3>
-              </div>
-                )
+              {hero.map(({id, ...allData})=> {
+              return <HeroData key={id} {...allData} />
               })}
               <div className='search-btn'>
                 <img src="./images/search-icon.png" alt="" />
