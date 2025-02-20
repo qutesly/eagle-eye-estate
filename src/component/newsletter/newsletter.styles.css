@@ -1,0 +1,45 @@
+.newsletter{
+    background-color: var(--primary-color);
+    padding: 2rem 7rem;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.newsletter-container{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.newsletter-text{
+display: flex;
+flex-direction: column;
+line-height: 1.5;
+}
+
+.newsletter-text h2{
+    font-size: 23px;
+}
+
+.review-form{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.input{
+    width: 100%;
+    padding: 0 2.5rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 800px) {
+    .newsletter{
+       display: none;
+    }
+}
