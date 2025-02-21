@@ -35,12 +35,17 @@ const HeroContent = () => {
             </div>
           </div>
         </div>
-        <HeroDetails hero={hero} className='hero-bottom'/>
+        {/* <HeroDetails hero={hero} className='hero-bottom'/> */}
         <HeroBtn
           text="Become an Affiliate"
           className="affiliate-btn blue-btn"
         />
       </div>
+      <HeroDetails hero={hero} className='hero-bottom'/>
+        {/* <HeroBtn
+          text="Become an Affiliate"
+          className="affiliate-btn blue-btn"
+        /> */}
      </div>
   );
 };
