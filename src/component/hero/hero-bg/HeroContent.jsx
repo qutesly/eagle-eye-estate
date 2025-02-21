@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import HeroDetails from "./HeroDetails";
 import HeroBtn from "./HeroBtn";
-import data from './data'
-
+import data from "./data";
 
 const HeroContent = () => {
-  const [hero, setHero] = useState(data)
+  const [hero, setHero] = useState(data);
   return (
     <div className="hero-bg">
       <div className="hero-content">
@@ -24,7 +23,7 @@ const HeroContent = () => {
             confidence and let us help you find your ideal property today!
           </p>
           <div className="top-btns">
-            <HeroBtn text='Explore Estate' className='blue-btn' />
+            <HeroBtn text="Explore Estate" className="blue-btn" />
 
             <div className="btn-underline">
               <div className="btn-wrap">
@@ -36,11 +35,13 @@ const HeroContent = () => {
             </div>
           </div>
         </div>
-        <HeroDetails hero={hero} />
-        <HeroBtn text='Become an Affiliate' className='affiliate-btn blue-btn' />
+        <HeroDetails hero={hero} className='hero-bottom'/>
+        <HeroBtn
+          text="Become an Affiliate"
+          className="affiliate-btn blue-btn"
+        />
       </div>
-      
-    </div>
+     </div>
   );
 };
 

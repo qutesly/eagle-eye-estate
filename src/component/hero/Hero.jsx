@@ -6,17 +6,15 @@ const Hero = () => {
   return (
     <div className="hero">
       <div
-        className="hero-container"
+        className="hero-image"
         style={{
           background: "url('/images/hero-house.png')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          position: "relative",
         }}
-      >
+    />
         <HeroContent />
-      </div>
     </div>
   );
 };

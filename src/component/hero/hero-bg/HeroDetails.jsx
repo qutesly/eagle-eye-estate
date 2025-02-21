@@ -1,10 +1,10 @@
 import React from 'react';
 import HeroData from './HeroData';
 
-const HeroDetails = ({hero}) => {
+const HeroDetails = ({hero, className}) => {
 
   return (
-    <div className="hero-bottom">
+    <div className={`${className}`}>
           <h2>buy/rent</h2>
           <div className="hero-b-container">
               {hero.map(({id, ...allData})=> {
