@@ -14,8 +14,8 @@ const HeroContent = () => {
             EXCEL <span>HOMES</span>
           </h1>
           <h2>
-            unlock your <span>FUTURE</span> with exceptional real estate
-            services.
+            Unlock Your <span>FUTURE</span> with Exceptional Real Estate
+            Services.
           </h2>
           <p>
             We turn your real estate dreams into reality. Whether you’re buying,

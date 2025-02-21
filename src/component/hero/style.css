@@ -23,7 +23,8 @@
 }
 
 .hero-top {
-  width: 50%;
+  width: 100;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -37,8 +38,12 @@
   margin-bottom: 1rem;
 }
 
-.hero-top span {
+.hero-top h1 span{
   color: var(--main-white);
+}
+
+.hero-top span {
+  color: var(--primary-color);
 }
 
 .hero-top h2 {
@@ -55,23 +60,21 @@
 }
 
 .top-btns {
-  border: 1px solid red;
-  width: 100%;
-  max-width: 50%;
+  width: 45%;
   display: flex;
   justify-content: space-between;
 }
 
 .blue-btn {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
+  border: none;
   outline: none;
   font-size: 15px;
   color: var(--main-white);
-  padding: 7px 10px;
+  padding: 7px 15px;
   background: var(--secondary-color);
 }
 
@@ -79,9 +82,9 @@
   margin-left: 10px;
 }
 
-.btn-underline {
-  width: 50%;
-}
+/* .btn-underline {
+  width: 40%;
+} */
 
 .btn-wrap {
   display: flex;
@@ -89,9 +92,13 @@
   justify-content: space-between;
 }
 
+.btn-wrap > img {
+  width: 2rem;
+}
+
 .contact-btn {
   background: transparent;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
 }
 
